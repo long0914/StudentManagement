@@ -24,7 +24,7 @@ namespace StudentManagement
 
         private void Form1_Load(object sender, EventArgs e)
         {
-        //    dgvStudents.DataSource = studentManager.GetStudents();
+ 
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace StudentManagement
 
 
             studentManager.AddStudent(new Student(
-                lblName.Text,
+                txtName.Text,
                 Convert.ToInt32(txtSem.Text),
                 txtAddress.Text,
                 txtPhone.Text
@@ -50,5 +50,7 @@ namespace StudentManagement
             dataForm df = new dataForm(studentManager);
             df.Show();
         }
+
+
     }
 }

@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace StudentManagement
 {
     public partial class dataForm : Form
     {
         StudentManager studentManager;
+        private Student selectedStudent;
 
         public dataForm(StudentManager sm)
         {
@@ -28,5 +30,9 @@ namespace StudentManagement
         private void databinding() {
             dgvStudents.DataSource = studentManager.GetStudents();
         }
+
+
+
+
     }
 }

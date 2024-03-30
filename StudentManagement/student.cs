@@ -34,11 +34,7 @@ namespace StudentManagement
         public string Address { get => address; set => address = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 
-        // ToString method to display student details
-        public override string ToString()
-        {
-            return $"Name: {Name}, Semester: {Sem}, Address: {Address}, Phone: {PhoneNumber}";
-        }
+
 
     }
 }
